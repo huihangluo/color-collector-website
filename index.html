@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Color Collector · 色彩收集者</title>
+  <meta name="description" content="在失去色彩的世界里，收集颜色，改变战斗方式，找回属于世界的光。">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23101716'/%3E%3Cpath d='M8 21c0-7 5-12 12-12 3 0 5 2 5 5 0 7-7 12-13 10-2 0-4-1-4-3Z' fill='%23d9ff6a'/%3E%3Ccircle cx='19' cy='14' r='2' fill='%23101716'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Color Collector 首页">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span>COLOR COLLECTOR</span>
+    </a>
+    <nav aria-label="主导航">
+      <a href="#game" data-zh="游戏" data-en="Game">游戏</a>
+      <a href="#colors" data-zh="色彩" data-en="Colors">色彩</a>
+      <a href="#world" data-zh="世界" data-en="World">世界</a>
+    </nav>
+    <button class="lang-toggle" type="button" aria-label="切换语言">EN</button>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-wash" aria-hidden="true"></div>
+      <div class="hero-copy reveal">
+        <p class="eyebrow" data-zh="独立 2D 动作冒险" data-en="AN INDIE 2D ACTION ADVENTURE">独立 2D 动作冒险</p>
+        <h1 id="hero-title">COLOR<br><span>COLLECTOR</span></h1>
+        <p class="hero-cn" data-zh="世界褪去了颜色。拾起它们，让每一种色彩成为你的战斗方式。" data-en="The world has lost its colors. Collect them—and turn every hue into a way to fight.">世界褪去了颜色。拾起它们，让每一种色彩成为你的战斗方式。</p>
+        <div class="hero-actions">
+          <button class="steam-button" type="button" disabled>
+            <span class="steam-dot" aria-hidden="true"></span>
+            <span data-zh="Steam 页面筹备中" data-en="Steam page coming soon">Steam 页面筹备中</span>
+          </button>
+          <a class="text-link" href="#game" data-zh="了解游戏" data-en="Discover the game">了解游戏</a>
+        </div>
+      </div>
+      <div class="hero-character" aria-label="游戏主角像素形象">
+        <div class="color-orbit" aria-hidden="true"></div>
+        <img src="./assets/player.png" alt="Color Collector 的主角">
+      </div>
+      <p class="vertical-note">DEVELOPMENT BUILD · 2026</p>
+    </section>
+
+    <section class="statement section" id="game">
+      <div class="section-label"><span>01</span><span data-zh="游戏" data-en="THE GAME">游戏</span></div>
+      <div class="statement-grid">
+        <h2 class="reveal" data-zh="颜色不是装饰。<br>它是你的构筑。" data-en="Color isn't decoration.<br>It's your build.">颜色不是装饰。<br>它是你的构筑。</h2>
+        <div class="statement-copy reveal">
+          <p data-zh="穿行于被遗忘的森林、聚落与遗迹。收集颜色，改变自身能力，在移动、探索和战斗之间寻找属于你的组合。" data-en="Travel through forgotten forests, settlements, and ruins. Collect colors, reshape your abilities, and discover combinations that change how you move, explore, and fight.">穿行于被遗忘的森林、聚落与遗迹。收集颜色，改变自身能力，在移动、探索和战斗之间寻找属于你的组合。</p>
+          <p class="small" data-zh="当前处于开发阶段，页面内容会随游戏制作继续更新。" data-en="Currently in development. This page will grow together with the game.">当前处于开发阶段，页面内容会随游戏制作继续更新。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="color-system section" id="colors">
+      <div class="section-label light"><span>02</span><span data-zh="色彩系统" data-en="COLOR SYSTEM">色彩系统</span></div>
+      <div class="palette-panel reveal">
+        <div class="palette-copy">
+          <p class="eyebrow dark" data-zh="收集 · 切换 · 组合" data-en="COLLECT · SHIFT · COMBINE">收集 · 切换 · 组合</p>
+          <h2 data-zh="让颜色改变<br>战斗的节奏。" data-en="Let color change<br>the rhythm of combat.">让颜色改变<br>战斗的节奏。</h2>
+          <p data-zh="不同颜色带来不同的行动选择。冻结、点燃、突破与探索，不是菜单里的数值，而是发生在你手中的动作。" data-en="Each color opens a different choice. Freeze, ignite, break through, and explore—not as menu stats, but as actions in your hands.">不同颜色带来不同的行动选择。冻结、点燃、突破与探索，不是菜单里的数值，而是发生在你手中的动作。</p>
+        </div>
+        <div class="palette-stage">
+          <img src="./assets/player.png" alt="可改变颜色的主角" class="palette-player">
+          <div class="swatches" role="list" aria-label="游戏颜色">
+            <button class="swatch active" style="--swatch:#eef5f7" data-color="#dfe9ed" aria-label="白色"></button>
+            <button class="swatch" style="--swatch:#ff5542" data-color="#ff5542" aria-label="红色"></button>
+            <button class="swatch" style="--swatch:#ffd93d" data-color="#ffd93d" aria-label="黄色"></button>
+            <button class="swatch" style="--swatch:#32a9ff" data-color="#32a9ff" aria-label="蓝色"></button>
+            <button class="swatch" style="--swatch:#68e46f" data-color="#68e46f" aria-label="绿色"></button>
+            <button class="swatch" style="--swatch:#ad62ff" data-color="#ad62ff" aria-label="紫色"></button>
+          </div>
+          <p class="try-note" data-zh="选择一种颜色" data-en="Choose a color">选择一种颜色</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="world section" id="world">
+      <div class="section-label"><span>03</span><span data-zh="世界" data-en="THE WORLD">世界</span></div>
+      <div class="world-grid">
+        <figure class="world-image reveal">
+          <img src="./assets/forest.png" alt="Color Collector 中层层交叠的森林">
+          <figcaption data-zh="森林仍记得颜色。" data-en="The forest still remembers color.">森林仍记得颜色。</figcaption>
+        </figure>
+        <div class="world-copy reveal">
+          <p class="chapter">CHAPTER 01</p>
+          <h2 data-zh="在安静的世界里，<br>找到仍会回应你的生命。" data-en="In a quiet world,<br>find the lives that still answer.">在安静的世界里，<br>找到仍会回应你的生命。</h2>
+          <div class="creature-card">
+            <img src="./assets/forest-spirit.png" alt="森林中的树精角色">
+            <div>
+              <strong data-zh="森林住民" data-en="FOREST DWELLER">森林住民</strong>
+              <span data-zh="并不是每个相遇都需要拔刀。" data-en="Not every encounter asks for a blade.">并不是每个相遇都需要拔刀。</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta section">
+      <p class="eyebrow" data-zh="开发中" data-en="IN DEVELOPMENT">开发中</p>
+      <h2 data-zh="当世界重新拥有颜色，<br>旅程就会开始。" data-en="When color returns to the world,<br>the journey begins.">当世界重新拥有颜色，<br>旅程就会开始。</h2>
+      <button class="steam-button large" type="button" disabled>
+        <span class="steam-dot" aria-hidden="true"></span>
+        <span data-zh="Steam 页面筹备中" data-en="Steam page coming soon">Steam 页面筹备中</span>
+      </button>
+    </section>
+  </main>
+
+  <footer>
+    <span>COLOR COLLECTOR</span>
+    <span data-zh="独立游戏开发中" data-en="AN INDIE GAME IN DEVELOPMENT">独立游戏开发中</span>
+    <span>© 2026</span>
+  </footer>
+  <script src="./site.js"></script>
+</body>
+</html>
